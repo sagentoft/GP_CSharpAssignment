@@ -463,8 +463,8 @@ MonoBehaviour:
   enemyPrefab: {fileID: 5747683449313113112, guid: 2f728083519f6bd49bccacd1427c79bc, type: 3}
   player: {fileID: 860076875}
   pool: {fileID: 1201005136}
-  spawnInterval: 1
-  spawnDistance: 20
+  spawnInterval: 0.5
+  spawnDistance: 25
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
