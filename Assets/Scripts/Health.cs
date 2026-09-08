@@ -1,12 +1,14 @@
 using UnityEngine;
 
-public class Health : MonoBehaviour, IDamageable<int>, IKillable
+public class Health : MonoBehaviour, IDamageable<int>
 {
     [SerializeField] private int maxHealth;
     [SerializeField] private int minHealth;
     [SerializeField] private int currentHealth;
 
     private int defaultHealth = 50;
+
+    private IKillable owner;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,12 +34,7 @@ public class Health : MonoBehaviour, IDamageable<int>, IKillable
         currentHealth -= damageAmount;
         if (currentHealth <= minHealth)
         {
-            Kill();
+            owner.Die();
         }
-    }
-
-    public void Kill()
-    {
-        throw new System.NotImplementedException();
     }
 }
