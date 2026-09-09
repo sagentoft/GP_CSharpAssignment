@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour, IDamageable<int>
@@ -9,11 +10,21 @@ public class Health : MonoBehaviour, IDamageable<int>
     private int defaultHealth = 50;
 
     private IKillable owner;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+
+    private void Awake()
     {
+        owner = GetComponent<IKillable>();
         maxHealth = SetDefaultHealth(maxHealth);
+        
+        if (owner == null)
+        {
+            Debug.LogError($"{name} has a Health component but does not implement IKillable.");
+        }
+    }
+
+    private void OnEnable()
+    {
         currentHealth = maxHealth;
     }
 

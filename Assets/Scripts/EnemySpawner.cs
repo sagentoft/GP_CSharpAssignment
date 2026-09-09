@@ -36,6 +36,7 @@ public class EnemySpawner : MonoBehaviour
         
         Vector3 spawnPosition = player.position + direction * spawnDistance;
 
-        pool.GetEnemy(spawnPosition);
+        BaseEnemy enemy = pool.GetEnemy(spawnPosition);
+        enemy.SetTarget(player);
     }
 }

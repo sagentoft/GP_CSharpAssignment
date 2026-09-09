@@ -8,9 +8,11 @@ public class PooledObjects : MonoBehaviour
     
     List<GameObject> pool_Enemies = new List<GameObject>();
 
-    public GameObject GetEnemy(Vector3 location)
+    public BaseEnemy GetEnemy(Vector3 location)
     {
-        return SpawnObjectFromPool(enemyPrefab, pool_Enemies, location);
+        GameObject enemyObject = SpawnObjectFromPool(enemyPrefab, pool_Enemies, location);
+
+        return enemyObject.GetComponent<BaseEnemy>();
     }
     
     private GameObject SpawnObjectFromPool(GameObject objPrefab, List<GameObject> pool, Vector3 location)
