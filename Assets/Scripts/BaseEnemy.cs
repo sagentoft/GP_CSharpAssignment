@@ -1,8 +1,11 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class BaseEnemy : MonoBehaviour, IKillable
 {
+    public event Action OnDeath;
+    
     [SerializeField] private float moveSpeed = 3f;
 
     private Transform target;
@@ -27,6 +30,7 @@ public class BaseEnemy : MonoBehaviour, IKillable
 
     public void Die()
     {
+        OnDeath?.Invoke();
         gameObject.SetActive(false);
     }
     

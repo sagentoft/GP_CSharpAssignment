@@ -504,9 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc291fc3551095498f894dc2675adee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: 5747683449313113112, guid: 2f728083519f6bd49bccacd1427c79bc, type: 3}
   player: {fileID: 860076875}
-  pool: {fileID: 1201005136}
   spawnInterval: 0.5
   spawnDistance: 25
 --- !u!1 &832575517
@@ -782,7 +780,7 @@ GameObject:
   - component: {fileID: 1201005135}
   - component: {fileID: 1201005136}
   m_Layer: 0
-  m_Name: ObjectPooler
+  m_Name: ObjectPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -816,6 +814,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PooledObjects
   enemyPrefab: {fileID: 5747683449313113112, guid: 2f728083519f6bd49bccacd1427c79bc, type: 3}
+  projectilePrefab: {fileID: 5163310162355175808, guid: 340c314021ed4044899f29778e4c352a, type: 3}
+  expPickupPrefab: {fileID: 2592942347880651568, guid: 8056bd3a789d6144787bc5fb19ca8d99, type: 3}
 --- !u!1001 &1791671285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -832,6 +832,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6154819390696802698, guid: 3497246bb21b5bd4da6f9fefcd0e4689, type: 3}
+      propertyPath: pooledObjects
+      value: 
+      objectReference: {fileID: 1201005136}
     - target: {fileID: 6435183741877999899, guid: 3497246bb21b5bd4da6f9fefcd0e4689, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

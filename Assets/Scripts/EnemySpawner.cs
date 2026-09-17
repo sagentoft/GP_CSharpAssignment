@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject enemyPrefab;
+    //[SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Transform player;
-    [SerializeField] private PooledObjects pool;
+    //[SerializeField] private PooledObjects pool;
 
     [SerializeField] private float spawnInterval = 1f;
     [SerializeField] private float spawnDistance = 15f;
@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
         
         Vector3 spawnPosition = player.position + direction * spawnDistance;
 
-        BaseEnemy enemy = pool.GetEnemy(spawnPosition);
+        BaseEnemy enemy = PooledObjects.Instance.GetEnemy(spawnPosition);
         enemy.SetTarget(player);
     }
 }
