@@ -1,0 +1,89 @@
+:root {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel-container {
+    width: 85%;
+    max-width: 1100px;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 48px;
+    align-self: center;
+    align-items: center;
+    background-color: rgb(40, 45, 59);
+    border-radius: 18px;
+}
+
+#game-over-title {
+    font-size: 60px;
+    -unity-font-style: bold;
+    color: white;
+    -unity-text-align: middle-center;
+    margin-bottom: 8px;
+}
+
+#subtitle-label {
+    font-size: 20px;
+    color: rgb(174, 187, 209);
+    margin-bottom: 32px;
+}
+
+#results-container {
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 32px;
+}
+
+#score-container, #time-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    padding: 24px;
+    margin: 8px;
+    background-color: rgb(54, 63, 84);
+    border-radius: 10px;
+    align-items: center;
+}
+
+#score-heading, #time-heading {
+    font-size: 18px;
+    color: rgb(174, 187, 209);
+    margin-bottom: 10px;
+}
+
+#final-score, #survival-time {
+    font-size: 36px;
+    color: white;
+    -unity-font-style: bold;
+}
+
+#restart-button, #main-menu-button {
+    width: 320px;
+    height: 60px;
+    flex-shrink: 0;
+    margin: 6px;
+    border-radius: 8px;
+    font-size: 22px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: white;
+    background-color: rgb(54, 63, 84);
+    border-width: 2px;
+    border-color: rgb(75, 88, 115);
+}
+
+#restart-button {
+    background-color: rgb(50, 137, 183);
+    border-color: rgb(80, 190, 240);
+}
+
+#restart-button:hover, #main-menu-button:hover {
+    background-color: rgb(80, 190, 240);
+    border-color: rgb(120, 220, 255);
+}

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/LevelUp.uss?fileID=7433441132597879392&amp;guid=df33121021cf6da42b12701d2eaad039&amp;type=3#LevelUp"/>
+    <ui:VisualElement name="level-up-panel" class="level-up-panel" style="flex-grow: 1; position: absolute;">
+        <ui:Label text="LEVEL UP!" name="title-label" style="margin-bottom: 24px; font-size: 40px; color: rgb(255, 255, 255); -unity-text-align: middle-center; -unity-font-style: bold; width: 100%;"/>
+        <ui:VisualElement name="choices-container" class="choices-container" style="flex-grow: 1; flex-direction: row; justify-content: center; width: 100%;"/>
+    </ui:VisualElement>
+</ui:UXML>

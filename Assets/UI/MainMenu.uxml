@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/MainMenu.uss?fileID=7433441132597879392&amp;guid=fb873199d7c4dc8418159fe4df5c45bf&amp;type=3#MainMenu"/>
+    <ui:VisualElement name="menu-container" style="flex-grow: 1;">
+        <ui:Label text="SWARM" name="title-label"/>
+        <ui:Label text="Label" name="highscore-label"/>
+        <ui:Button text="Start Run" name="play-button"/>
+        <ui:Button text="Quit Game" name="quit-button"/>
+    </ui:VisualElement>
+</ui:UXML>

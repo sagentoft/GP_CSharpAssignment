@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec06683fc78d78d4a8b5c1aa6c1d59d2, type: 3}
+  m_Name: Data_SecondWind
+  m_EditorClassIdentifier: Assembly-CSharp::FallbackReward
+  rewardName: Second Wind
+  effect:
+    rid: 2794579551568527440
+  references:
+    version: 2
+    RefIds:
+    - rid: 2794579551568527440
+      type: {class: HealEffect, ns: , asm: Assembly-CSharp}
+      data:
+        healPercentage: 0.25

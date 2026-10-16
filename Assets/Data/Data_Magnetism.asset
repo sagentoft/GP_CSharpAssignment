@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111d9bdb8d32c4d81b9968d609fe95, type: 3}
+  m_Name: Data_Magnetism
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  upgradeName: Magnetism
+  description: Increase pickup radius
+  icon: {fileID: -8586417740124189794, guid: 4d63cab7bab9d7948a4b1bea27981445, type: 3}
+  weaponData: {fileID: 0}
+  levels:
+  - description: Increase pickup radius by 40%.
+    effects:
+    - rid: 2794579551568527439
+  - description: Increase pickup radius by 40%.
+    effects:
+    - rid: 2794579551568527439
+  - description: Increase pickup radius by 40%.
+    effects:
+    - rid: 2794579551568527439
+  references:
+    version: 2
+    RefIds:
+    - rid: 2794579551568527439
+      type: {class: PickupRadiusEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.4

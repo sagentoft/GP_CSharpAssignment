@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111d9bdb8d32c4d81b9968d609fe95, type: 3}
+  m_Name: Data_Sword
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  upgradeName: Sword
+  description: Swing attack woosh
+  icon: {fileID: 4349915267927364619, guid: b6f7e724a1c8934458b73618d5e0b737, type: 3}
+  weaponData: {fileID: 11400000, guid: e197c4ddb0da10145b0d9fc08d0a0479, type: 2}
+  levels:
+  - description: Swing your sword to damage nearby enemies.
+    effects:
+    - rid: 2794579374313046097
+  - description: Perform 1 additional sword swing.
+    effects:
+    - rid: 2794579574586867822
+  - description: Increase sword damage by 60%.
+    effects:
+    - rid: 2794579574586867823
+  - description: Increase sword range by 25% and reduce cooldown by 15%.
+    effects:
+    - rid: 2794579574586867824
+    - rid: 2794579574586867825
+  - description: Perform 1 additional swing and increase damage by 25%.
+    effects:
+    - rid: 2794579574586867826
+    - rid: 2794579574586867827
+  - description: Perform 1 additional sword swing.
+    effects:
+    - rid: 2794579574586867848
+  - description: Increase sword damage by 40%.
+    effects:
+    - rid: 2794579574586867849
+  - description: Increase sword range by 20% and reduce cooldown by 15%.
+    effects:
+    - rid: 2794579574586867850
+    - rid: 2794579574586867851
+  - description: Perform 1 additional sword swing.
+    effects:
+    - rid: 2794579574586867852
+  - description: Increase sword damage by 40%, range by 20%, and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867853
+    - rid: 2794579574586867854
+    - rid: 2794579574586867855
+  references:
+    version: 2
+    RefIds:
+    - rid: 2794579374313046097
+      type: {class: AcquireWeaponEffect, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2794579574586867822
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867823
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.6
+    - rid: 2794579574586867824
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.85
+    - rid: 2794579574586867825
+      type: {class: WeaponRangeEffect, ns: , asm: Assembly-CSharp}
+      data:
+        rangeMultiplier: 1.25
+    - rid: 2794579574586867826
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867827
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.25
+    - rid: 2794579574586867848
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867849
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.4
+    - rid: 2794579574586867850
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.85
+    - rid: 2794579574586867851
+      type: {class: WeaponRangeEffect, ns: , asm: Assembly-CSharp}
+      data:
+        rangeMultiplier: 1.2
+    - rid: 2794579574586867852
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867853
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.4
+    - rid: 2794579574586867854
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.8
+    - rid: 2794579574586867855
+      type: {class: WeaponRangeEffect, ns: , asm: Assembly-CSharp}
+      data:
+        rangeMultiplier: 1.2

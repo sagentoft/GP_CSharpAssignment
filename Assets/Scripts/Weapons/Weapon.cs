@@ -3,60 +3,31 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    //[SerializeField] private PooledObjects pooledObjects;
-    
-    [SerializeField] private float range = 10f;
-    [SerializeField] private float attackInterval = 1f;
-    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private WeaponAttack attackBehavior;
 
+    private WeaponInstance instance;
     private float nextAttackTime;
+    
+    public WeaponInstance Instance => instance;
+    
+
+    public void Initialize(WeaponData weaponData)
+    {
+        instance = new WeaponInstance(weaponData);
+        attackBehavior.Initialize(instance);
+    }
 
     private void Update()
     {
-        if (Time.time >= nextAttackTime)
+        if (instance == null)
+            return;
+        
+        if (Time.time < nextAttackTime)
+            return;
+
+        if (attackBehavior.Attack())
         {
-            Collider target = FindClosestEnemy();
-            
-            if (target != null)
-            {
-                Attack(target);
-                
-                nextAttackTime = Time.time + attackInterval;
-            }
+            nextAttackTime = Time.time + instance.Cooldown;
         }
-    }
-
-    private Collider FindClosestEnemy()
-    {
-        Collider[] enemiesInRange = Physics.OverlapSphere(
-            transform.position,
-            range,
-            enemyLayer
-        );
-
-        Collider closestEnemy = null;
-        float closestDistance = Mathf.Infinity;
-        
-        foreach (Collider col in enemiesInRange)
-        {
-            float distance = Vector3.Distance(transform.position, col.transform.position);
-
-            if (distance < closestDistance)
-            {
-                closestEnemy = col;
-                closestDistance = distance;
-            }
-        }
-        
-        return closestEnemy;
-    }
-
-    private void Attack(Collider target)
-    {
-        Vector3 targetDirection = target.transform.position - transform.position;
-
-        Projectile projectile = PooledObjects.Instance.GetProjectile(transform.position);
-        
-        projectile.Initialize(targetDirection);
     }
 }

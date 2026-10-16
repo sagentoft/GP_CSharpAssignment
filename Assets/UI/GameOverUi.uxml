@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameOver.uss?fileID=7433441132597879392&amp;guid=a4f80603d356ff04cb29015ef84ee092&amp;type=3#GameOver"/>
+    <ui:VisualElement name="panel-container">
+        <ui:Label text="GAME OVER" name="game-over-title" style="align-items: center; align-self: center;"/>
+        <ui:Label text="Your run has ended" name="subtitle-label" style="align-items: center; align-self: center;"/>
+        <ui:VisualElement name="results-container" style="flex-grow: 1;">
+            <ui:VisualElement name="score-container" style="flex-grow: 1;">
+                <ui:Label text="FINAL SCORE" name="score-heading"/>
+                <ui:Label text="Label" name="final-score"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="time-container" style="flex-grow: 1;">
+                <ui:Label text="TIME SURVIVED" name="time-heading"/>
+                <ui:Label text="Label" name="survival-time"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Restart" name="restart-button"/>
+        <ui:Button text="Main Menu" name="main-menu-button"/>
+    </ui:VisualElement>
+</ui:UXML>

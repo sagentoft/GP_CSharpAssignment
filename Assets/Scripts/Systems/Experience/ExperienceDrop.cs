@@ -3,7 +3,10 @@ using UnityEngine;
 
 public class ExperienceDrop : MonoBehaviour
 {
+    [SerializeField] private ExpPickup expPickupPrefab;
+    
     private BaseEnemy enemy;
+    private int expValue;
 
     private void Awake()
     {
@@ -22,6 +25,7 @@ public class ExperienceDrop : MonoBehaviour
 
     private void DropExperience()
     {
-        PooledObjects.Instance.GetExpPickup(transform.position);
+        ExpPickup pickup = PooledObjects.Instance.Get(expPickupPrefab, transform.position);
+        pickup.Initialize(enemy.ExperienceReward);
     }
 }

@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111d9bdb8d32c4d81b9968d609fe95, type: 3}
+  m_Name: Data_SpectralLance
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  upgradeName: Spectral Lance
+  description: Fire ghostly piercing projectiles
+  icon: {fileID: -2966200626249415253, guid: 06fe7ca3ee0aa23459810ff5050cf3eb, type: 3}
+  weaponData: {fileID: 11400000, guid: 9e65a2ccfa002344fa6d75c830334f42, type: 2}
+  levels:
+  - description: Fire spectral projectiles that pierce through 2 additional enemies.
+    effects:
+    - rid: 2794579574586867828
+    - rid: 2794579574586867829
+  - description: Pierce through 2 additional enemies.
+    effects:
+    - rid: 2794579574586867830
+  - description: Increase Spectral Lance damage by 50%.
+    effects:
+    - rid: 2794579574586867831
+  - description: Pierce through 2 additional enemies and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867832
+    - rid: 2794579574586867833
+  - description: Pierce through 2 additional enemies and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867832
+    - rid: 2794579574586867833
+  - description: Increase Spectral Lance damage by 30%.
+    effects:
+    - rid: 2794579574586867856
+  - description: Pierce through 3 additional enemies.
+    effects:
+    - rid: 2794579574586867857
+  - description: Increase damage by 25% and reduce cooldown by 15%.
+    effects:
+    - rid: 2794579574586867858
+    - rid: 2794579574586867859
+  - description: Pierce through 3 additional enemies.
+    effects:
+    - rid: 2794579574586867860
+  - description: Fire 1 additional spectral projectile, increase damage by 30%, and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867861
+    - rid: 2794579574586867862
+    - rid: 2794579574586867863
+  references:
+    version: 2
+    RefIds:
+    - rid: 2794579574586867828
+      type: {class: AcquireWeaponEffect, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2794579574586867829
+      type: {class: AdditionalPierceEffect, ns: , asm: Assembly-CSharp}
+      data:
+        amount: 2
+    - rid: 2794579574586867830
+      type: {class: AdditionalPierceEffect, ns: , asm: Assembly-CSharp}
+      data:
+        amount: 2
+    - rid: 2794579574586867831
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.5
+    - rid: 2794579574586867832
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.8
+    - rid: 2794579574586867833
+      type: {class: AdditionalPierceEffect, ns: , asm: Assembly-CSharp}
+      data:
+        amount: 2
+    - rid: 2794579574586867856
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.3
+    - rid: 2794579574586867857
+      type: {class: AdditionalPierceEffect, ns: , asm: Assembly-CSharp}
+      data:
+        amount: 3
+    - rid: 2794579574586867858
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.25
+    - rid: 2794579574586867859
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.85
+    - rid: 2794579574586867860
+      type: {class: AdditionalPierceEffect, ns: , asm: Assembly-CSharp}
+      data:
+        amount: 3
+    - rid: 2794579574586867861
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.3
+    - rid: 2794579574586867862
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.8
+    - rid: 2794579574586867863
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1

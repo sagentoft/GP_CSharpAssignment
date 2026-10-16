@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a111d9bdb8d32c4d81b9968d609fe95, type: 3}
+  m_Name: Data_IceWand
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
+  upgradeName: Ice Wand
+  description: Shoot icy projectiles at enemies
+  icon: {fileID: 7157561037332017152, guid: 8d7b46a501a1a1441bc4aa029ccb4472, type: 3}
+  weaponData: {fileID: 11400000, guid: d5816edd8b5191741b77444fb950f867, type: 2}
+  levels:
+  - description: Fire icy projectiles at nearby enemies.
+    effects:
+    - rid: 2794579257181077592
+  - description: Fire 1 additional icy projectile.
+    effects:
+    - rid: 2794579574586867815
+  - description: Increase Ice Wand damage by 40% and reduce cooldown by 10%.
+    effects:
+    - rid: 2794579574586867816
+    - rid: 2794579574586867819
+  - description: Fire 1 additional icy projectile.
+    effects:
+    - rid: 2794579574586867817
+  - description: Fire 1 additional projectile, increase damage by 15%, and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867818
+    - rid: 2794579574586867820
+    - rid: 2794579574586867821
+  - description: Fire 1 additional icy projectile.
+    effects:
+    - rid: 2794579574586867841
+  - description: Increase Ice Wand damage by 25%.
+    effects:
+    - rid: 2794579574586867842
+  - description: Fire 1 additional projectile and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867843
+    - rid: 2794579574586867844
+  - description: Increase Ice Wand damage by 20%.
+    effects:
+    - rid: 2794579574586867845
+  - description: Fire 2 additional projectiles and reduce cooldown by 20%.
+    effects:
+    - rid: 2794579574586867846
+    - rid: 2794579574586867847
+  references:
+    version: 2
+    RefIds:
+    - rid: 2794579257181077592
+      type: {class: AcquireWeaponEffect, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 2794579574586867815
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867816
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.4
+    - rid: 2794579574586867817
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867818
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867819
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.9
+    - rid: 2794579574586867820
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.8
+    - rid: 2794579574586867821
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.15
+    - rid: 2794579574586867841
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867842
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.25
+    - rid: 2794579574586867843
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.8
+    - rid: 2794579574586867844
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 1
+    - rid: 2794579574586867845
+      type: {class: WeaponDamageEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 1.2
+    - rid: 2794579574586867846
+      type: {class: WeaponCooldownEffect, ns: , asm: Assembly-CSharp}
+      data:
+        multiplier: 0.8
+    - rid: 2794579574586867847
+      type: {class: AdditionalAttackEffect, ns: , asm: Assembly-CSharp}
+      data:
+        attacksToAdd: 2

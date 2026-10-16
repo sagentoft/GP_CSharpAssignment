@@ -1,0 +1,66 @@
+:root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#menu-container {
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(40, 45, 59);
+    border-radius: 0;
+}
+
+#title-label {
+    font-size: 64px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    color: rgb(235, 238, 245);
+    margin-bottom: 24px;
+}
+
+#highscore-label {
+    font-size: 22px;
+    -unity-text-align: middle-center;
+    color: rgb(174, 187, 209);
+    margin-bottom: 48px;
+}
+
+#play-button,
+#quit-button {
+    width: 100%;
+    max-width: 320px;
+    height: 64px;
+    flex-shrink: 0;
+    margin: 8px 0;
+
+    font-size: 24px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: white;
+
+    background-color: rgb(54, 63, 84);
+    border-width: 2px;
+    border-color: rgb(75, 88, 115);
+}
+
+#play-button {
+    background-color: rgb(50, 137, 183);
+    border-color: rgb(80, 190, 240);
+}
+
+#play-button:hover,
+#quit-button:hover {
+    background-color: rgb(80, 190, 240);
+    border-color: rgb(120, 220, 255);
+}

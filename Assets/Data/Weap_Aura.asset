@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2606083385ceefc4695840af38ab70a4, type: 3}
+  m_Name: Weap_Aura
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  weaponPrefab: {fileID: 2358963469176187744, guid: 2acbe71d11bc85149976b0f9c45ccab7, type: 3}
+  weaponName: Aura
+  icon: {fileID: -6946007662723423348, guid: 759b2fa8436aa4a4c80ffc3aa84157fc, type: 3}
+  baseDamage: 3
+  baseCooldown: 0.3
+  baseRange: 2
