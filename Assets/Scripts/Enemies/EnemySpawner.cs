@@ -77,7 +77,7 @@ public class EnemySpawner : MonoBehaviour
             if (elapsedTime < entry.unlockTime || entry.prefab == null)
                 continue;
             
-            int weight = Mathf.Max(0, entry.startingWeight);
+            int weight = GetWeight(entry);
             
             if (roll < weight)
                 return entry.prefab;
